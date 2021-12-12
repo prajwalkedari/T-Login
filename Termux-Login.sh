@@ -6,6 +6,7 @@ read -p "Enter UserName : " UserName
 read -p "Enter Password of User ${UserName} : " PassWord
 if [ "$UserName" == "root" ] && [ "$PassWord" == "root" ] 
 then 
+login_id="True"
 bash /data/data/com.termux/files/usr/etc/T-Login_prt.sh
 break
 fi
