@@ -12,7 +12,7 @@ fi
 while read lo_check; do
 IFS=','
 read -ra aar <<< "$lo_check"
-if [ "${aar[2]}" ==  "$UserName" ] &&  && [ "${aar[3]}" == "$PassWord" ] 
+if [ "${aar[2]}" ==  "$UserName" ] && [ "${aar[3]}" == "$PassWord" ] 
 then
 login_id="True"
 fi
