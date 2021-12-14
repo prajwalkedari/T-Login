@@ -1,5 +1,5 @@
-bash /data/data/com.termux/files/usr/etc/.supBanner.sh 
-bash /data/data/com.termux/files/usr/etc/.sbanner.sh
+bash .supBanner.sh 
+bash .sbanner.sh
 # echo "t-Login.sh" > /data/data/com.termux/files/usr/etc/bash.bashrc
 echo -e "\e[32m[+] Installing.........\e[0m"
 check_l=$( head -n 1 /data/data/com.termux/files/usr/etc/bash.bashrc )
