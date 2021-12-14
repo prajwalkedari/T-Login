@@ -3,7 +3,7 @@ bash .sbanner.sh
 # echo "t-Login.sh" > /data/data/com.termux/files/usr/etc/bash.bashrc
 echo -e "\e[32m[+] Installing.........\e[0m"
 check_l=$( head -n 1 /data/data/com.termux/files/usr/etc/bash.bashrc )
-if [ "$check_l" == "source /data/data/com.termux/files/usr/etc/Termux-Login.sh" ] || [ 1=1 ]
+if [ "$check_l" == "source /data/data/com.termux/files/usr/etc/Termux-Login.sh" ]
 then
 echo -e "\e[32m[+] Alreading Install \e[0m"
 else
