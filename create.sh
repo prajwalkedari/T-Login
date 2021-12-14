@@ -20,7 +20,7 @@ echo " "
 echo " "
 echo " "
 echo " "
-echo "             "EXIT FROM TERMUX AND RE OPEN IT AFTER 5 SECONDS "
+echo "             EXIT FROM TERMUX AND RE OPEN IT AFTER 5 SECONDS "
 echo " "
 echo " "
 sleep 2.0
