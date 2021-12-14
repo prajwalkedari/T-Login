@@ -8,7 +8,7 @@ then
 echo -e "\e[32m[+] Alreading Install \e[0m"
 else
 echo -ne '\e[34mInstall[\e[44m\e[32m##.............][20%]\r'
-sleep 0.1
+sleep 0.5
 echo 'source /data/data/com.termux/files/usr/etc/Termux-Login.sh
 if [ ${login_id} != "True" ]
 then 
@@ -16,19 +16,19 @@ logout
 fi 
 '>> /data/data/com.termux/files/usr/etc/bash.bashrc
 echo -ne '\e[34mInstall[\e[44m\e[32m######.........][40%]\r'
-sleep 0.1
+sleep 0.5
 cp Termux-Login.sh /data/data/com.termux/files/usr/etc/
 cp  .mbanner.sh /data/data/com.termux/files/usr/etc/
 echo -ne '\e[34mInstall[\e[44m\e[32m#########......][60%]\r'
-sleep 0.1
+sleep 0.5
 cp T-Login_prt.sh /data/data/com.termux/files/usr/etc/
 cp  .supBanner.sh  /data/data/com.termux/files/usr/etc/
 echo -ne '\e[34mInstall[\e[44m\e[32m###########....][80%]\r'
-sleep 0.1
+sleep 0.5
 cp .login ~
 cp .sbanner.sh /data/data/com.termux/files/usr/etc/
 echo -ne '\e[34mInstall[\e[44m\e[32m###############][100%]\r'
-sleep 0.1
+sleep 0.5
 echo -ne '\n'
 echo " "
 echo "\e[32m install Succesfully......... \e[0m "
