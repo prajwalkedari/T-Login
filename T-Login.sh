@@ -31,7 +31,7 @@ echo -ne '\e[34mInstall[\e[44m\e[32m###############][100%]\r'
 sleep 0.5
 echo -ne '\n'
 echo " "
-echo -e "\e[32m install Succesfully......... \e[0m "
+echo -e "\e[49m\e[32m install Succesfully......... \e[0m "
 fi
 
 echo " "
