@@ -40,7 +40,6 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Test Banner 
         run: |
-          bash .mbanner.sh
           bash .sbanner.sh
           bash .supBanner.sh
           
