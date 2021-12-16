@@ -15,6 +15,9 @@ if [ ${login_id} != "True" ]
 then 
 logout
 fi 
+PS1='\033[01;34m\]┌──\[\033[01;32m\]${Names}\[\033[01;34m\]@\[\033[01;31m\]>
+
+\[\033[01;34m\]└╼\[\033[01;31m\]►\[\033[01;32m\]'
 '>> /data/data/com.termux/files/usr/etc/bash.bashrc
 echo -ne '\e[34mInstall[\e[44m\e[32m######.........][40%]\r'
 sleep 0.5
