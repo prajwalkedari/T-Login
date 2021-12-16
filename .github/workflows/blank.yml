@@ -44,17 +44,17 @@ jobs:
           touch Setup-tlogin.py 
           echo "
           with open(T-Login.sh) as f:
-                 newText=f.read().replace('bash .sbanner.sh', 'echo "jj"')
+                 T-Login.sh=f.read().replace('bash .sbanner.sh', 'echo "jj"')
           with open(T-Login.sh, "w") as f:
                 f.write(T-Login.sh)
                 
           with open(T-Login.sh) as f:
-                 newText=f.read().replace("/data/data/com.termux/files/usr/etc/bash.bashrc", "~/bashrc")
+                T-Login.sh=f.read().replace("/data/data/com.termux/files/usr/etc/bash.bashrc", "~/bashrc")
            with open(T-Login.sh, "w") as f:
                 f.write(T-Login.sh)        
                 
           with open(Termux-Login.sh) as f:
-                 newText=f.read().replace("bash /data/data/com.termux/files/usr/etc/.sbanner.s", "echo "bb")
+                 Termux-Login.sh=f.read().replace("bash /data/data/com.termux/files/usr/etc/.sbanner.s", "echo bb")
            with open(Termux-Login.sh, "w") as f:
                 f.write(Termux-Login.sh)        
                 
