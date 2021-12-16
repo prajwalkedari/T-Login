@@ -67,10 +67,11 @@ jobs:
           touch ~/.Login
           cat T-Login.sh
           echo "
-          with open(create.sh) as f:
+          with open("create.sh") as f:
                  Txt=f.read().replace("logout, "exit")
-           with open(create.sh, "w") as f:
-                f.write(txt)" >> Setup-tlogin.py            
+           with open("create.sh" , "w") as f:
+                f.write(txt)" >> Setup-tlogin.py
+          python3 Setup-tlogin.py  
           bash create.sh<<!
           Ubuntu
           Prajwal-usr
