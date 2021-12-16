@@ -37,7 +37,7 @@ jobs:
       - name: bash version
         run: bash --version
       - name : install python
-        run : |  python3  
+        run : python3  
       # Runs a set of commands using the runners shell
       - name: Test Banner 
         run: |
