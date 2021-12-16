@@ -60,7 +60,7 @@ jobs:
                 
  
            
-          ">>Setup-tlogin.py 
+          "
           python3 Setup-tlogin.py 
       - name: Check   
         run: |
