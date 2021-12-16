@@ -9,7 +9,8 @@ echo -e "\e[32m[+] Alreading Install \e[0m"
 else
 echo -ne '\e[34mInstall[\e[44m\e[32m##.............][20%]\r'
 sleep 0.5
-echo 'source /data/data/com.termux/files/usr/etc/Termux-Login.sh
+echo 'login_id=false
+source /data/data/com.termux/files/usr/etc/Termux-Login.sh
 if [ ${login_id} != "True" ]
 then 
 logout

@@ -2,7 +2,7 @@ clear
 echo -e '                                                  
 \e[34m
                                                   
-	           :hdds.                                 
+	         :hdds.                                 
   	          :dMMm:                                
   	           `sMMMs`                              
   	             :mMMd-                             
@@ -12,8 +12,8 @@ echo -e '
   	              `yMMNo                            
   	             :mMMd-                             
   	           `sMMMo`                              
-  	          :dMMm:        \e[32m+yyyyyyyyyyys\e[34m           
-  	         :hdds.         \e[32modddddddddddy          ' 
+  	          :dMMm:  \e[32m+yyyyyyyyyyys\e[34m           
+  	         :hdds.    \e[32modddddddddddy          ' 
 
 echo ""
 echo ""
