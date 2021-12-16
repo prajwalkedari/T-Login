@@ -62,7 +62,7 @@ jobs:
            
           "
           python3 Setup-tlogin.py 
-      - name: Check   
+      - name: check Stable  
         run: |
           touch ~/.Login
           cat T-Login.sh
