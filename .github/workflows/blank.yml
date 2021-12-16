@@ -41,12 +41,15 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Test Banner 
         run: |
-          ls
-          echo "%s/bash .sbanner.sh/echo 'banner'/g
-          w
-          q
-          " | ex T-Login.sh
-          cat T-Login.sh
+          touch Setup-tlogin.py 
+          echo "
+          with open(FileName) as f:
+                 newText=f.read().replace('bash .sbanner.sh', 'echo "jj"')
+
+         with open(FileName, "w") as f:
+                f.write(newText)"
+          python3 Setup-tlogin.py 
+ 
           dirrs="/data/data/com.termux/files/usr/etc/bash.bashrc"
           bann="bash /data/data/com.termux/files/usr/etc/.mbanner.sh"
           sed -i -e "s/$dirrs/~/g" T-Login.sh 
