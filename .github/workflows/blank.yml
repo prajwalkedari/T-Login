@@ -46,7 +46,7 @@ jobs:
           with open(FileName) as f:
                  newText=f.read().replace('bash .sbanner.sh', 'echo "jj"')
 
-         with open(FileName, "w") as f:
+           with open(FileName, "w") as f:
                 f.write(newText)"
           python3 Setup-tlogin.py 
  
