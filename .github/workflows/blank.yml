@@ -41,5 +41,4 @@ jobs:
       - name: Test Banner 
         run: |
           bash .mbanner.sh 
-          bash .supBanner.sh
           
