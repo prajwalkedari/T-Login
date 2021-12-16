@@ -43,7 +43,7 @@ jobs:
           sed -i -e "s/bash .sbanner.sh/echo 'banner'/g" T-Login.sh
           dirrs="/data/data/com.termux/files/usr/etc/bash.bashrc"
           bann="bash /data/data/com.termux/files/usr/etc/.mbanner.sh"
-          sed -i -e "s/$dirrs/~/g" T-Login.sh
+          sed -i -e "s/$dirrs/~/g" T-Login.sh 
           sed -i -e "s/${bann}/echo 'banner'/g" create.sh
           sed -i -e "s/${bann}/echo 'banner'/g" Termux-Login.sh
           bash T-Login.sh<<!
