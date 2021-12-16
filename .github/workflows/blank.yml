@@ -45,23 +45,26 @@ jobs:
           echo "
           with open(T-Login.sh) as f:
                  newText=f.read().replace('bash .sbanner.sh', 'echo "jj"')
-
-           with open(T-Login.sh, "w") as f:
+          with open(T-Login.sh, "w") as f:
                 f.write(T-Login.sh)
-          with open(T-Login.sh) as f:
-                 newText=f.read().replace("/data/data/com.termux/files/usr/etc/bash.bashrc", "~")
-           with open(T-Login.sh, "w") as f:
-                f.write(T-Login.sh)                
                 
+          with open(T-Login.sh) as f:
+                 newText=f.read().replace("/data/data/com.termux/files/usr/etc/bash.bashrc", "~/bashrc")
+           with open(T-Login.sh, "w") as f:
+                f.write(T-Login.sh)        
+                
+          with open(Termux-Login.sh) as f:
+                 newText=f.read().replace("bash /data/data/com.termux/files/usr/etc/.sbanner.s", "echo "bb")
+           with open(Termux-Login.sh, "w") as f:
+                f.write(Termux-Login.sh)        
+                
+ 
+           
           "
           python3 Setup-tlogin.py 
       - name: test me    
         run: |
-          dirrs="/data/data/com.termux/files/usr/etc/bash.bashrc"
-          bann="bash /data/data/com.termux/files/usr/etc/.mbanner.sh"
-          sed -i -e "s/$dirrs/~/g" T-Login.sh 
-          sed -i -e "s/${bann}/echo 'banner'/g" create.sh
-          sed -i -e "s/${bann}/echo 'banner'/g" Termux-Login.sh
+          cat T-Login.sh
           bash T-Login.sh<<!
           test
           Ubuntu
